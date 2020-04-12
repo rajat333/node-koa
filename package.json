@@ -4,14 +4,19 @@
   "description": "Node JS App With KOA Framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll"
   },
   "author": "Rajat khurana",
   "license": "ISC",
   "dependencies": {
     "koa": "^2.11.0",
     "koa-body": "^4.1.1",
+    "koa-logger": "^3.2.1",
     "koa-router": "^8.0.8",
     "koa-static-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0",
+    "supertest": "^4.0.2"
   }
 }
