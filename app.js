@@ -21,10 +21,11 @@ app.use(router.routes());
 app.use(logger());
 app.use(router.allowedMethods());
 
-router.get('/', (ctx, next) => {
-    console.log("2");
-    ctx.body = 'Hello World!';
-   });
+require('./routes/user')({ router });
+// router.get('/', (ctx, next) => {
+//     console.log("2");
+//     ctx.body = 'Hello World!';
+//    });
 // app.use(function* (){
 //     this.body = 'Hello world!';
 //  });
